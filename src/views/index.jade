@@ -1,0 +1,28 @@
+
+html
+    head
+        //- bower:css
+        link(rel='stylesheet', href='../../public/lib/bootstrap/dist/css/bootstrap.min.css')
+        //- endbower
+        //- bower:js
+        script(src='../../public/lib/jquery/dist/jquery.js')
+        script(src='../../public/lib/bootstrap/dist/js/bootstrap.js')
+        //- endbower
+        //- inject:css
+        
+        link(rel="stylesheet", href="/css/styles.css")
+        
+        //- endinject
+        //- inject:js
+        
+        script(src="/js/scripts.js")
+        
+        //- endinject
+        title Myapp
+    body(class='myClass')
+        h1(id='MyId') My App
+            h3 sub Heading
+            ul
+                each val in list
+                    li= val
+            
